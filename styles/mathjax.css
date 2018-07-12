@@ -1,0 +1,34 @@
+#MathInput {
+    width: 100%;
+    padding: 8px;
+    resize: vertical;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+#MathPreview {
+    white-space: pre-wrap;
+    /*background: #f1f1f1; */
+    border: 0px solid #a9a9a9;
+    min-height: 30px;
+    margin-top: 5px;
+    padding: 8px 10px;
+}
+
+#MathBuffer {
+    white-space: pre-wrap;
+    /*background: #f1f1f1; */
+    border: 0px solid #a9a9a9;
+    min-height: 30px;
+    margin-top: 5px;
+    padding: 8px 10px;
+}
+
+#MathPreview:empty:not(:focus):before {
+    content: attr(data-text)
+}
+
+#MathPreview:empty:focus:after {
+    content: attr(data-text)
+}

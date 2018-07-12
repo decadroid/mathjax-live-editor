@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mathjax Live Editor</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./styles/download-button.css">
+    <link rel="stylesheet" type="text/css" href="./styles/fontawesome-5.1.0.css">
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link rel="stylesheet" type="text/css" href="./styles/mathjax.css">
+    <link rel="stylesheet" type="text/css" href="./styles/toggle-switch.css">
+    <script src="./scripts/canvas.js"></script>
+    <script src="./scripts/download-button.js"></script>
+    <script src="./scripts/download.js"></script>
+    <script src="./scripts/html2canvas.min.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/math-preview.js"></script>
+    <script src="./scripts/mathjax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+
+<body>
+
+    <div style="padding:5px; max-width:625px">
+        <div class="note"><pre style="margin:0px !important">To write Mathematics use [math] tag.<br>Ex: [math] ax^2+bx+c=0 [/math] (<a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics" title="Tex Documentation" target="_blank" rel="nofollow">LaTeX</a>)</pre></div><br>
+        <textarea name="comment" id="MathInput" rows="2" onkeyup="Preview.Update(), edValueKeyPress()" onkeypress="Preview.pdate(), edValueKeyPress()" placeholder="Input..." maxlength="1500"></textarea>
+        <div id="textarea_feedback" class="right"></div>
+
+        <div id="Ss1" style="background-color: #f6f6f6;">
+            <div id="MathPreview" class="comment_preview" data-text="Output..."></div>
+            <div id="MathBuffer" class="comment_buffer" style="visibility:hidden; position: absolute;"></div>
+            <div id="my-watermark" style="margin-top:5px">
+                <div id="ss-watermark"><img height="25px" src="https://decadroid.com/wp-content/uploads/2018/07/ss-watermark.png" /></div>
+                <div class="textmark"><span class="textvia">Generated from:</span> decadroid.com/editors</div>
+            </div>
+        </div>
+
+        <div class="right" style="margin:5px 0px;">
+            Logo
+            <label class="switch">
+             <input id="wmtoggler" class="toggler" type="checkbox" checked>
+             <span class="slider round"></span> 
+          </label>
+            <span style="margin-left:0px">Text</span>
+            <label class="switch">
+             <input id="textToggler" class="toggler" type="checkbox" checked>
+             <span class="slider round"></span> 
+          </label>
+        </div>
+
+        <i style="margin-right:2px; font-size:18px; vertical-align:middle;" class="fas fa-image"></i>
+        <button id="download" data-label="Download" style="margin-right:2px" onclick="takeScreenShot()">Download</button>
+        <button id="preview">Preview</button>
+
+        <div><img id="ssimg" alt="Generated screenshot"></div>
+        [<strong>Note:</strong> Press space key one or two times more in input if preview is not shown or black image is downloaded.]
+    </div>
+
+</body>
+
+</html>
