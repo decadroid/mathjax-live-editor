@@ -6,17 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./styles/download-button.css">
-    <link rel="stylesheet" type="text/css" href="./styles/fontawesome-5.1.0.css">
+    <link rel="stylesheet" type="text/css" href="./plugins/fontawesome/css/all.css">
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
     <link rel="stylesheet" type="text/css" href="./styles/mathjax.css">
     <link rel="stylesheet" type="text/css" href="./styles/toggle-switch.css">
-    <script src="./scripts/canvas.js"></script>
-    <script src="./scripts/download-button.js"></script>
-    <script src="./scripts/download.js"></script>
-    <script src="./scripts/html2canvas.min.js"></script>
-    <script src="./scripts/main.js"></script>
-    <script src="./scripts/math-preview.js"></script>
-    <script src="./scripts/mathjax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="./scripts/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./scripts/download.js"></script>
+    <script type="text/javascript" src="./scripts/html2canvas.min.js"></script>
+    <script type="text/javascript" src="./plugins/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 
 <body>
@@ -30,7 +27,7 @@
             <div id="MathPreview" class="comment_preview" data-text="Output..."></div>
             <div id="MathBuffer" class="comment_buffer" style="visibility:hidden; position: absolute;"></div>
             <div id="my-watermark" style="margin-top:5px">
-                <div id="ss-watermark"><img height="25px" src="https://decadroid.com/wp-content/uploads/2018/07/ss-watermark.png" /></div>
+                <div id="ss-watermark"><i class="fab fa-github fa-lg"></i></div>
                 <div class="textmark"><span class="textvia">Generated from:</span> decadroid.com/editors</div>
             </div>
         </div>
@@ -41,7 +38,7 @@
              <input id="wmtoggler" class="toggler" type="checkbox" checked>
              <span class="slider round"></span> 
           </label>
-            <span style="margin-left:0px">Text</span>
+            <span style="margin-left:-5px">Text</span>
             <label class="switch">
              <input id="textToggler" class="toggler" type="checkbox" checked>
              <span class="slider round"></span> 
@@ -56,6 +53,10 @@
         [<strong>Note:</strong> Press space key one or two times more in input if preview is not shown or black image is downloaded.]
     </div>
 
+    <script type="text/javascript" src="./scripts/canvas.js"></script>
+    <script type="text/javascript" src="./scripts/download-button.js"></script>
+    <script type="text/javascript" src="./scripts/main.js"></script>
+    <script type="text/javascript" src="./scripts/math-preview.js"></script>
 </body>
 
 </html>

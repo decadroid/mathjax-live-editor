@@ -30,15 +30,14 @@ pre {
 }
 
 #ss-watermark {
-    background-color: #000;
-    height: 30px;
-    padding: 3px 3px 0px 3px;
+    background-color: #eee;
+    padding: 5px 3px 0px 5px;
 }
 
 .textmark {
     background-color: #eee;
     /* width:100%; */
-    padding: 7px 9px 3px 7px;
+    padding: 3px 9px 3px 7px;
 }
 
 .textvia {
@@ -94,8 +93,7 @@ pre {
     width: 100%;
     display: none;
     margin-top: 20px;
-    zoom: 0.33;
-    -moz-transform: scale(0.33);
-    transform: scale(0.33);
+    -moz-transform: scale(1);
+    transform: scale(1);
     margin-bottom: 10px;
 }
