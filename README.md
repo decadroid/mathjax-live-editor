@@ -3,4 +3,4 @@ HTML Live Editor with Mathjax Enabled
 
 Running live here:
 
-https://decadroid.com/editors
+https://decadroid.github.io/mathjax-live-editor/
