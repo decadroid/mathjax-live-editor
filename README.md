@@ -10,4 +10,4 @@ https://decadroid.github.io/mathjax-live-editor/
 
 ### License
 
-This project is licensed under the [MIT license](LICENSE.txt).
+This project is licensed under the [MIT license](LICENSE.md).
