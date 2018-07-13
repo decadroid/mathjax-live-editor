@@ -16,7 +16,9 @@
 #download,
 #download:after,
 #download:before {
-    padding: 4px 6px;
+    padding: 5px 8px;
+    font-size: 14px;
+    font-weight: 600;
     -webkit-transition: -webkit-transform 0.75s, background-color .125s;
     -moz-transition: -moz-transform 0.75s, background-color .125s;
     -ms-transition: -ms-transform 0.75s, background-color .125s;
@@ -44,7 +46,7 @@
 #download:before {
     z-index: 2;
     color: #fff;
-    background-color: #3e87ec;
+    background-color: #2196F3;
     content: attr(data-label);
 }
 
@@ -62,7 +64,7 @@
 }
 
 #download:active:before {
-    background-color: #3571c8;
+    background-color: #2196F3;
 }
 
 #download.loading {

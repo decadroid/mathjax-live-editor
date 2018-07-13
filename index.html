@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="./styles/main.css">
     <link rel="stylesheet" type="text/css" href="./styles/mathjax.css">
     <link rel="stylesheet" type="text/css" href="./styles/toggle-switch.css">
+    <link rel="stylesheet" type="text/css" href="./styles/github-corner.css">
 
     <script type="text/javascript" src="./scripts/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./scripts/download.js"></script>
@@ -20,10 +21,10 @@
 </head>
 
 <body>
-
     <div class="container">
-        <h2 class="center">Mathjax Live Editor</h2>
-        <p><pre style="margin:0px !important">To write Mathematics use [math] tag. For Ex: [math] ax^2+bx+c=0 [/math] (<a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics" title="Tex Documentation" target="_blank" rel="nofollow">LaTeX</a>)</pre></p>
+        <a href="https://github.com/decadroid/mathjax-live-editor">
+            <h2 class="center">Mathjax Live Editor</h2>
+        </a>
 
         <textarea name="comment" id="MathInput" rows="2" onkeyup="Preview.Update(), edValueKeyPress()" onkeypress="Preview.pdate(), edValueKeyPress()" placeholder="Input..." maxlength="1500"></textarea>
 
@@ -51,17 +52,41 @@
           </label>
         </div>
 
-        <i style="margin-right:2px; font-size:18px; vertical-align:middle;" class="fas fa-image"></i>
         <button id="download" data-label="Download" style="margin-right:2px" onclick="takeScreenShot()">Download</button>
-        <button id="preview">Preview</button>
+        <button id="preview"><strong>Preview</strong></button>
 
         <div><img id="ssimg" alt="Generated screenshot"></div>
 
-        <p>[<strong>Note:</strong> Press space key one or two times more in input if preview is not shown or black image is downloaded.]</p>
-
     </div>
 
-    <p class="center">Made with <i class="fas fa-heart" style="color: red"></i> by <a href="https://github.com/chintel"><strong>Chintan Patel</strong></a></p>
+    <div class="sub-container">
+        <div class="flex-box">
+            <div id="flex-icon1"><i style="margin: 3px;" class="fas fa-clipboard-list fa-lg"></i></div>
+            <div id="flex-content1">
+                To write Mathematics use [math] tag. Example:<br>
+                <p><strong>[math]</strong> x = {-b \pm \sqrt{b^2-4ac} \over 2a} <strong>[/math]</strong> <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics" title="Documentation" target="_blank" rel="nofollow">Documentation <i class="fas fa-external-link-square-alt"></i></a></p>
+            </div>
+        </div>
+
+        <div class="flex-box">
+            <div id="flex-icon2">
+                <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div id="flex-content2">Press space key one or two times more in input if preview is not shown or black image is downloaded.</div>
+        </div>
+    </div>
+
+    <div class="center" style="margin-bottom: 20px">Made with <i class="fas fa-heart" style="color: red"></i> by <a href="https://github.com/chintel"><strong>Chintan Patel</strong></a></div>
+
+    <a href="https://github.com/decadroid/mathjax-live-editor" class="github-corner" aria-label="View source on GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewbox="0 0 250 250" fill="#fff" style="position: absolute; top: 0; right: 0">
+            <path d="M0 0l115 115h15l12 27 108 108V0z" fill="#151513" />
+            <path class="octo-arm" d="M128 109c-15-9-9-19-9-19 3-7 2-11 2-11-1-7 3-2 3-2 4 5 2 11 2 11-3 10 5 15 9 16" style="-webkit-transform-origin: 130px 106px; transform-origin: 130px 106px"
+            />
+            <path class="octo-body" d="M115 115s4 2 5 0l14-14c3-2 6-3 8-3-8-11-15-24 2-41 5-5 10-7 16-7 1-2 3-7 12-11 0 0 5 3 7 16 4 2 8 5 12 9s7 8 9 12c14 3 17 7 17 7-4 8-9 11-11 11 0 6-2 11-7 16-16 16-30 10-41 2 0 3-1 7-5 11l-12 11c-1 1 1 5 1 5z"
+            />
+        </svg>
+    </a>
 
     <script type="text/javascript" src="./scripts/canvas.js"></script>
     <script type="text/javascript" src="./scripts/download-button.js"></script>
