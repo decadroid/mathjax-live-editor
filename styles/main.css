@@ -1,21 +1,35 @@
 body {
-    padding: 5px;
-    max-width: 625px
+    padding: 10px;
+    max-width: 800px;
+    margin: auto;
+    font-family: "Arial";
+}
+
+.container {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: auto;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    padding: 1rem;
+    border-radius: .25rem;
 }
 
 pre {
     white-space: pre-wrap !important;
+    font-family: "Arial";
+}
+
+a {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
 }
 
 .right {
     text-align: right;
-}
-
-.note {
-    background: #fcfcfc;
-    border: 0px solid #ccc;
-    border-top: 0px;
-    padding: 8px;
 }
 
 
@@ -95,5 +109,5 @@ pre {
     margin-top: 20px;
     -moz-transform: scale(1);
     transform: scale(1);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
