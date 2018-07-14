@@ -87,10 +87,11 @@ h2 {
     background-color: #2196F3;
     color: white;
     border: 0px solid #3e87ec;
-    border-radius: 2px;
-    padding: 5px 8px;
+    border-radius: 1px;
+    padding: 6px 9px;
     font-size: 14px;
     margin-bottom: 10px;
+    margin-left: 5px;
 }
 
 #preview.on:after {
@@ -99,11 +100,11 @@ h2 {
     top: 0;
     left: 0;
     right: 0;
-    padding: 5px 8px;
+    padding: 6px 9px;
     font-size: 14px;
     font-weight: 600;
     background: #2196F3;
-    border-radius: 2px;
+    border-radius: 1px;
 }
 
 #ssimg {
@@ -133,7 +134,7 @@ h2 {
     color: #111111;
     background-color: #ddd;
     font-size: 19px;
-    width: 1.5rem;
+    width: 3rem;
     padding: 10px;
 }
 
@@ -147,7 +148,7 @@ h2 {
     color: red;
     background-color: #FFcccc;
     font-size: 22px;
-    width: 1.5rem;
+    width: 3rem;
     padding: 10px;
 }
 
