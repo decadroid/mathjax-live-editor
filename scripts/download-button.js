@@ -4,7 +4,7 @@ $(".download").bind("click", window.takeScreenShot = function() {
             dpi: 300,
             onrendered: function(canvas) {
                 var screenshot = canvas.toDataURL("image/png");
-                download(screenshot, "mytext", "image/png");
+                download(screenshot, "mytext.png", "image/png");
             }
         });
     };
