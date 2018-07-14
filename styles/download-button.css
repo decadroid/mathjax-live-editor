@@ -113,53 +113,8 @@
     top: 0;
     bottom: 0;
     width: 1.75rem;
-    padding-top: 0.80rem;
+    padding: 0.25rem 0.45rem;
     background: rgba(0, 0, 0, 0.1);
-}
-
-.icon-download {
-    position: relative;
-    display: block;
-    width: 1rem;
-    height: 0.5rem;
-    margin: auto;
-    border: solid 0.15rem #fff;
-    border-top: none;
-}
-
-.icon-download:before,
-.icon-download:after {
-    content: '';
-    display: block;
-    position: absolute;
-    animation: icon-bounce 0.5s infinite alternate;
-}
-
-.icon-download:before {
-    left: 0.255rem;
-    top: -0.40rem;
-    width: 0.20rem;
-    height: 0.35rem;
-    background: #fff;
-}
-
-.icon-download:after {
-    left: 0.065rem;
-    top: -0.125rem;
-    width: 0;
-    height: 0;
-    border-left: solid 0.30rem transparent;
-    border-right: solid 0.30rem transparent;
-    border-top: solid 0.30rem #fff;
-}
-
-@keyframes icon-bounce {
-    from {
-        transform: translateY(-2.5px);
-    }
-    to {
-        transform: translateY(1px);
-    }
 }
 
 @keyframes white-pulse {
