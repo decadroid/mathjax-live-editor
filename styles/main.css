@@ -93,7 +93,9 @@ h2 {
     margin-bottom: 10px;
     margin-left: 5px;
 }
-
+#preview:focus {
+    outline: none;
+}
 #preview.on:after {
     content: "Hide";
     position: absolute;
